@@ -1,0 +1,160 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache
+.pytest_cache
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+wiki/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+.idea
+/app/bot.session
+/app/user.session
+/unknown_errors.txt
+/app/user.session-journal
+/app/telethon_user.session
+/app/telethon_user_telethon.session
+/app/telethon_user_telethon.session-journal
+/data/sessions/user_telethon.session-journal
+/data/sessions/user_telethon.session
+/data/sessions/user.session
+/data/sessions/bot.session
+/app/modules/covid/covid_data_response.json
+/data/sessions/
+/app/unknown_errors.txt
+/data/data_codegen/
+/.prod.env
+/.cicd.env
+/app/modules/todoist_module/todoist-sync/0cffbb5eca4cf6822b5552d5ade8de550ef57fec.json
+/app/modules/todoist_module/todoist-sync/0cffbb5eca4cf6822b5552d5ade8de550ef57fec.sync
+/app/modules/todoist_module/todoist-sync/c71eebf7832b9b21dbecc63a87f0601c479a8c50.json
+/data/todoist-sync/c71eebf7832b9b21dbecc63a87f0601c479a8c50.json
+/data/codegen_imported/c71eebf7832b9b21dbecc63a87f0601c479a8c50.py
+/data/codegen_imported/c71eebf7832b9b21dbecc63a87f0601c479a8c50.schema.json
+/app/modules/todoist_module/todoist-sync/c71eebf7832b9b21dbecc63a87f0601c479a8c50.sync
+/data/todoist-sync/c71eebf7832b9b21dbecc63a87f0601c479a8c50.sync
+/junit/test-results.xml
+/data/codegen_imported/todoist-export-0cffbb5eca4cf6822b5552d5ade8de550ef57fec.py
+/data/codegen_imported/todoist-export-0cffbb5eca4cf6822b5552d5ade8de550ef57fec.schema.json
+/data/codegen_imported/todoist-export-c71eebf7832b9b21dbecc63a87f0601c479a8c50.py
+/data/codegen_imported/todoist-export-c71eebf7832b9b21dbecc63a87f0601c479a8c50.schema.json
+/app/services/todoist_service/todoist-sync/0cffbb5eca4cf6822b5552d5ade8de550ef57fec.json
+/app/services/todoist_service/todoist-sync/0cffbb5eca4cf6822b5552d5ade8de550ef57fec.sync
+/data/1211013668.session
+/app/tools/armos.txt
+/app/tools/armos-on-telegram.txt
+utogram_botkit.egg-info
+/data/josxabot.logger
+/legacy/_archive/todoist_module/todoist-sync/
+/data/server_sessions/
+/data/updates.json
+/data/update_models.py
