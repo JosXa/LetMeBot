@@ -50,7 +50,7 @@ jobs:
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
   push-arm32:
-    runs-on: arm32v7/ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
