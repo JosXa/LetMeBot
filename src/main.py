@@ -38,6 +38,12 @@ def generate_responses(query: str) -> Iterable[InlineQueryResultArticle]:
             "thumb_url": "https://duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png",
         },
         {
+            "ident": "bing-images",
+            "url": "https://www.bing.com/images/search?q=" + encoded_query,
+            "name": "🖼️ Bing Images",
+            "thumb_url": "https://www.gizmochina.com/wp-content/uploads/2020/10/Microsoft-Bing-Logo-2020.jpg",
+        },
+        {
             "ident": "startpage",
             "url": "https://www.startpage.com/do/dsearch?query=" + encoded_query,
             "name": "🔎 Startpage",
