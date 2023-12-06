@@ -8,4 +8,4 @@ RUN poetry install --no-dev
 COPY . ./
 ENV SHELL=/bin/bash
 
-CMD ["poetry", "run", "python", "-m", "letmebot.main"]
+CMD ["poetry", "run", "python", "-m", "src.main"]
