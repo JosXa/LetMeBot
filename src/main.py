@@ -1,5 +1,4 @@
 import os
-import os
 import urllib
 from typing import Iterable, Optional
 from urllib.parse import urlencode
@@ -27,79 +26,79 @@ def generate_responses(query: str) -> Iterable[InlineQueryResultArticle]:
     sites = [
         {
             "ident": "google",
-            "url": "http://google.com/search?q=" + encoded_query,
+            "url": f"https://google.com/search?q={encoded_query}",
             "name": "🔎 Google",
             "thumb_url": "https://www.google.de/images/hpp/ic_wahlberg_product_core_48.png8.png",
         },
         {
             "ident": "ddg",
-            "url": "https://duckduckgo.com/?q=" + encoded_query,
+            "url": f"https://duckduckgo.com/?q={encoded_query}",
             "name": "🦆 DuckDuckGo",
             "thumb_url": "https://duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png",
         },
         {
             "ident": "bing-images",
-            "url": "https://www.bing.com/images/search?q=" + encoded_query,
+            "url": f"https://www.bing.com/images/search?q={encoded_query}",
             "name": "🖼️ Bing Images",
             "thumb_url": "https://www.gizmochina.com/wp-content/uploads/2020/10/Microsoft-Bing-Logo-2020.jpg",
         },
         {
             "ident": "startpage",
-            "url": "https://www.startpage.com/do/dsearch?query=" + encoded_query,
+            "url": f"https://www.startpage.com/do/dsearch?query={encoded_query}",
             "name": "🔎 Startpage",
             "thumb_url": "https://www.startpage.com/graphics/favicon/sp-apple-touch-icon-152x152.png",
         },
         {
             "ident": "youtube",
-            "url": "https://www.youtube.com/results?search_query=" + encoded_query,
+            "url": f"https://www.youtube.com/results?search_query={encoded_query}",
             "name": "📺 YouTube",
             "thumb_url": "https://s.ytimg.com/yts/img/favicon_144-vflWmzoXw.png",
         },
         {
             "ident": "ecosia",
-            "url": "https://ecosia.org/search?q=" + encoded_query,
+            "url": f"https://ecosia.org/search?q={encoded_query}",
             "name": "🌳 Ecosia",
             "thumb_url": "https://cdn.ecosia.org/assets/images/png/apple-touch-icon.png",
         },
         {
             "ident": "wiki",
-            "url": "https://en.wikipedia.org/wiki/Special:Search/" + encoded_query,
+            "url": f"https://en.wikipedia.org/wiki/Special:Search/{encoded_query}",
             "name": "📚 Wikipedia",
             "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png",
         },
         {
             "ident": "Wikihow",
-            "url": "https://en.wikihow.com/wikiHowTo?search=" + encoded_query,
+            "url": f"https://en.wikihow.com/wikiHowTo?search={encoded_query}",
             "name": "📖 Wikihow",
-            "thumb_url": "http://www.wikihow.com/images/7/71/Wh-logo.jpg",
+            "thumb_url": "https://www.wikihow.com/images/7/71/Wh-logo.jpg",
         },
         {
             "ident": "bing",
-            "url": "https://bing.com/search?q=" + encoded_query,
+            "url": f"https://bing.com/search?q={encoded_query}",
             "name": "💩 Bing",
-            "thumb_url": "http://logok.org/wp-content/uploads/2014/09/Bing-logo-2013-880x660.png",
+            "thumb_url": "https://logok.org/wp-content/uploads/2014/09/Bing-logo-2013-880x660.png",
         },
         {
             "ident": "ud",
-            "url": "https://www.urbandictionary.com/define.php?term=" + encoded_query,
+            "url": f"https://www.urbandictionary.com/define.php?term={encoded_query}",
             "name": "📖 Urban Dictionary",
-            "thumb_url": "http://a2.mzstatic.com/us/r30/Purple/v4/dd/ef/75/ddef75c7-d26c-ce82-4e3c-9b07ff0871a5/mzl.yvlduoxl.png",
+            "thumb_url": "https://a2.mzstatic.com/us/r30/Purple/v4/dd/ef/75/ddef75c7-d26c-ce82-4e3c-9b07ff0871a5/mzl.yvlduoxl.png",
         },
         {
             "ident": "lmgtfy",
-            "url": "http://lmgtfy.com/?q=" + encoded_query,
+            "url": f"https://lmgtfy.com/?q={encoded_query}",
             "name": "🔎  Let Me Google That For You",
             "thumb_url": "https://www.lmgtfy.com/assets/sticker-b222a421fb6cf257985abfab188be7d6746866850efe2a800a3e57052e1a2411.png",
         },
         {
             "ident": "amazon",
-            "url": "https://www.amazon.de/s?field-keywords=" + encoded_query,
+            "url": f"https://www.amazon.de/s?field-keywords={encoded_query}",
             "name": "🛒 Amazon",
-            "thumb_url": "http://www.turnerduckworth.com/media/filer_public/86/18/86187bcc-752a-46f4-94d8-0ce54b98cd46/td-amazon-smile-logo-01-large.jpg",
+            "thumb_url": "https://www.turnerduckworth.com/media/filer_public/86/18/86187bcc-752a-46f4-94d8-0ce54b98cd46/td-amazon-smile-logo-01-large.jpg",
         },
         {
             "ident": "telethondocs",
-            "url": "https://lonamiwebs.github.io/Telethon/?q=" + encoded_query,
+            "url": f"https://lonamiwebs.github.io/Telethon/?q={encoded_query}",
             "name": "📖 Telethon Docs",
         },
     ]
